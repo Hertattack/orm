@@ -7,11 +7,18 @@
     "test": "test"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "./node_modules/mocha/bin/mocha"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "chai": "^4.2.0",
     "mocha": "^7.1.1"
+  },
+  "mocha": {
+    "recurse": true
+  },
+  "dependencies": {
+    "ohm-js": "^0.14.0"
   }
 }

@@ -1,0 +1,9 @@
+FactExpressionTemplate {
+    FactExpression = Text? ObjectTypeExpression (Text ObjectTypeExpression)* Text?
+    Text = text
+    ObjectTypeExpression = "{O=" Identifier ":" internalExpression "}"
+    Identifier = letter+
+    internalExpression = (~"}" any)+
+
+    text = (alnum | space)+
+}
