@@ -1,0 +1,12 @@
+<shapes>
+    <shape name="Role" aspect="fixed">
+        <background>
+            <path>
+                <rect x="0" y="0" w="70" h="30"/>
+            </path>
+        </background>
+        <foreground>
+            <fillstroke/>
+        </foreground>
+    </shape>
+</shapes>
