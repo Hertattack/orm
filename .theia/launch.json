@@ -30,7 +30,7 @@
       "type": "node",
       "request": "launch",
       "name": "Launch Playground",
-      "cwd" : "${workspaceFolder}/backend",
+      "cwd" : "${workspaceFolder}",
       "program": "${workspaceFolder}/backend/src/playground.js"
     }
   ]

@@ -4,7 +4,7 @@
  */
 
 class FactExpression {
-
+    constructor(){}
 }
 
-export default FactExpression;
+module.exports = FactExpression;

@@ -1,4 +1,5 @@
-const UniverseOfDiscourse = require('./metamodel/UniverseOfDiscourse');
+const UniverseOfDiscourseBuilder = require('./metamodel/UniverseOfDiscourseBuilder');
+const Parser = require('./parser/Parser');
 
 var feTemplate = "{O=Dimension:The <width>} of {O=Figure:figure <7>} is {O=Distance:<102>mm}";
 var additionalFe = [
@@ -6,5 +7,10 @@ var additionalFe = [
     "The width of figure 9 is 132mm"
 ]; 
 
-var uod = new UniverseOfDiscourse();
-uod.processFactExpressions(feTemplate, additionalFe);
+var uodBuilder = new UniverseOfDiscourseBuilder({parser: new Parser()});
+var uod = uodBuilder
+            .addFactExpressionsByParsing(feTemplate, additionalFe)
+            .build()
+;
+
+console.log(uod);

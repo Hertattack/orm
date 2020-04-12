@@ -4,8 +4,12 @@
  */
 
 class Classification {
+    constructor(qualification){
+        this.qualification = qualification;
+    }
+
     // The name of the class.
     qualification;
 }
 
-export default Classification;
+module.exports = Classification;

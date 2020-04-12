@@ -6,10 +6,10 @@
  * is not a word, it is a being of flesh and blood that needs to be modelled in the UoD.
  */
 
-import Classification from "./Classification";
+const Classification = require("./Classification");
 
 class ObjectType extends Classification {
 
 }
 
-export default ObjectType ;
+module.exports = ObjectType;

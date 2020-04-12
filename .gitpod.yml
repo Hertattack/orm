@@ -1,5 +1,5 @@
 tasks:
-  - init: echo "Replace me with a build script for the project."
+  - init: echo "Running init"
     command: /workspace/orm/install-tools.sh
 image:
   file: .gitpod.Dockerfile
